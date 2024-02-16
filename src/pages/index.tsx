@@ -55,7 +55,6 @@ export default function Home({ tasks }: HomeProps) {
 					content="https://artistic-alchemy-prompts.vercel.app/opengraph-image.png"
 					key="og-image"
 				/>
-				<link rel="icon" href="https://artistic-alchemy-prompts.vercel.app/favicon.ico" />
 			</Head>
 			<Container>
 				<div className="p-4 flex overflow-scroll flex-col gap-8 min-h-screen w-prose max-w-prose mx-auto">

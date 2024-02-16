@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Header() {
 	return (
 		<div className="flex gap-8 mt-4 w-full flex-col">
-			<div className="text-4xl">
+			<div className="text-3xl md:text-4xl">
 				<h1>
 					Artistic Alchemy
 					{/* ⊹ ۪ 𖥔 ˑ ִ ֗ ִ ۫ ˑ⊹ ۪ ﾟ｡⋆ */}

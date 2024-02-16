@@ -148,15 +148,15 @@ export default function GeneratedTask({ setSelection }: any) {
 								Courtesy of ChatGPT
 							</sup>
 						</span>{' '}
-						to create a new prompt.
+						to create a new prompt:
 					</span>
 					<div className="flex flex-col border-green-500 text-green-500 gap-4 grow justify-center">
-						<div className="flex gap-2">
-							<p>I want to</p>
-							<div>
-								<label>
+						<div className="flex flex-cols md:flex-row gap-2 flex-wrap">
+							<div className="flex gap-2 w-full md:w-auto">
+								<p className="whitespace-nowrap">I want to</p>
+								<label className="grow">
 									<select
-										className=" border-green-500 border cursor-pointer px-1 bg-inherit hover:bg-green-500/20 rounded transition-colors"
+										className="w-full border-green-500 border cursor-pointer px-1 bg-inherit hover:bg-green-500/20 rounded transition-colors"
 										value={startingPoint}
 										onChange={(e) => setStartingPoint(e.target.value)}>
 										{startingPointOptions.map((option) => (
@@ -167,11 +167,11 @@ export default function GeneratedTask({ setSelection }: any) {
 									</select>
 								</label>
 							</div>
-							<p>a sense of</p>
-							<div>
-								<label>
+							<div className="flex gap-2 w-full md:w-auto">
+								<p className="whitespace-nowrap">a sense of</p>
+								<label className="grow">
 									<select
-										className=" border-green-500 rounded hover:bg-green-500/20 transition-colors border px-1 bg-inherit cursor-pointer"
+										className="w-full border-green-500 rounded hover:bg-green-500/20 transition-colors border px-1 bg-inherit cursor-pointer"
 										value={sense}
 										onChange={(e) => setSense(e.target.value)}>
 										{senseOptions.map((option) => (

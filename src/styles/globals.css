@@ -24,7 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-	@apply md:text-2xl;
+	@apply text-lg md:text-2xl;
 }
 
 @layer utilities {

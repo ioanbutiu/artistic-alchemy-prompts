@@ -140,7 +140,7 @@ export default function RandomTask({ tasks, setSelection }: RandomTaskProps) {
 							</button>
 						</div> */}
 					<h3 className="text-sm uppercase">{selectedTask.week}</h3>
-					<h2 className="pt-8 pb-4 text-4xl">{selectedTask.task}</h2>
+					<h2 className="pt-8 pb-4 text-3xl md:text-4xl">{selectedTask.task}</h2>
 					<div className="task-description" dangerouslySetInnerHTML={{ __html: selectedTask.description }} />
 				</motion.div>
 			)}
